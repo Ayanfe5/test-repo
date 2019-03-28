@@ -1,0 +1,1327 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://IdentitySearch.nimc/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://IdentitySearch.nimc/">
+
+<xs:element name="AllTransfersByASA" type="tns:AllTransfersByASA" />
+
+<xs:element name="AllTransfersByASAResponse" type="tns:AllTransfersByASAResponse" />
+
+<xs:element name="ApproveUser" type="tns:ApproveUser" />
+
+<xs:element name="ApproveUserResponse" type="tns:ApproveUserResponse" />
+
+<xs:element name="DeclineUser" type="tns:DeclineUser" />
+
+<xs:element name="DeclineUserResponse" type="tns:DeclineUserResponse" />
+
+<xs:element name="TransferUnits" type="tns:TransferUnits" />
+
+<xs:element name="TransferUnitsResponse" type="tns:TransferUnitsResponse" />
+
+<xs:element name="UpdateUser" type="tns:UpdateUser" />
+
+<xs:element name="UpdateUserAndResetPassword" type="tns:UpdateUserAndResetPassword" />
+
+<xs:element name="UpdateUserAndResetPasswordResponse" type="tns:UpdateUserAndResetPasswordResponse" />
+
+<xs:element name="UpdateUserResponse" type="tns:UpdateUserResponse" />
+
+<xs:element name="UpdateUserSELF" type="tns:UpdateUserSELF" />
+
+<xs:element name="UpdateUserSELFResponse" type="tns:UpdateUserSELFResponse" />
+
+<xs:element name="checkDuplicateUserForORGs" type="tns:checkDuplicateUserForORGs" />
+
+<xs:element name="checkDuplicateUserForORGsResponse" type="tns:checkDuplicateUserForORGsResponse" />
+
+<xs:element name="compareFinger" type="tns:compareFinger" />
+
+<xs:element name="compareFingerResponse" type="tns:compareFingerResponse" />
+
+<xs:element name="createAccountORGChecker" type="tns:createAccountORGChecker" />
+
+<xs:element name="createAccountORGCheckerResponse" type="tns:createAccountORGCheckerResponse" />
+
+<xs:element name="createAccountUSER" type="tns:createAccountUSER" />
+
+<xs:element name="createAccountUSERResponse" type="tns:createAccountUSERResponse" />
+
+<xs:element name="getAccessList" type="tns:getAccessList" />
+
+<xs:element name="getAccessListResponse" type="tns:getAccessListResponse" />
+
+<xs:element name="getAccessObject" type="tns:getAccessObject" />
+
+<xs:element name="getAccessObjectResponse" type="tns:getAccessObjectResponse" />
+
+<xs:element name="getAllTopUpUnits" type="tns:getAllTopUpUnits" />
+
+<xs:element name="getAllTopUpUnitsResponse" type="tns:getAllTopUpUnitsResponse" />
+
+<xs:element name="getAllUsers" type="tns:getAllUsers" />
+
+<xs:element name="getAllUsersResponse" type="tns:getAllUsersResponse" />
+
+<xs:element name="getAvailableUnits" type="tns:getAvailableUnits" />
+
+<xs:element name="getAvailableUnitsResponse" type="tns:getAvailableUnitsResponse" />
+
+<xs:element name="getPermissionByLevel" type="tns:getPermissionByLevel" />
+
+<xs:element name="getPermissionByLevel2" type="tns:getPermissionByLevel2" />
+
+<xs:element name="getPermissionByLevel2Response" type="tns:getPermissionByLevel2Response" />
+
+<xs:element name="getPermissionByLevelResponse" type="tns:getPermissionByLevelResponse" />
+
+<xs:element name="getSignature" type="tns:getSignature" />
+
+<xs:element name="getSignatureResponse" type="tns:getSignatureResponse" />
+
+<xs:element name="getUserByID" type="tns:getUserByID" />
+
+<xs:element name="getUserByIDResponse" type="tns:getUserByIDResponse" />
+
+<xs:element name="getUserByName" type="tns:getUserByName" />
+
+<xs:element name="getUserByNameResponse" type="tns:getUserByNameResponse" />
+
+<xs:element name="grantaccessDemo" type="tns:grantaccessDemo" />
+
+<xs:element name="grantaccessDemoResponse" type="tns:grantaccessDemoResponse" />
+
+<xs:element name="grantaccessType" type="tns:grantaccessType" />
+
+<xs:element name="grantaccessTypeResponse" type="tns:grantaccessTypeResponse" />
+
+<xs:element name="login" type="tns:login" />
+
+<xs:element name="loginResponse" type="tns:loginResponse" />
+
+<xs:element name="passwordchange" type="tns:passwordchange" />
+
+<xs:element name="passwordchangeResponse" type="tns:passwordchangeResponse" />
+
+<xs:element name="revokeaccessDemo" type="tns:revokeaccessDemo" />
+
+<xs:element name="revokeaccessDemoResponse" type="tns:revokeaccessDemoResponse" />
+
+<xs:element name="revokeaccessType" type="tns:revokeaccessType" />
+
+<xs:element name="revokeaccessTypeResponse" type="tns:revokeaccessTypeResponse" />
+
+<xs:element name="searchByDemo" type="tns:searchByDemo" />
+
+<xs:element name="searchByDemoNIN" type="tns:searchByDemoNIN" />
+
+<xs:element name="searchByDemoNINResponse" type="tns:searchByDemoNINResponse" />
+
+<xs:element name="searchByDemoResponse" type="tns:searchByDemoResponse" />
+
+<xs:element name="searchByDocumentNo" type="tns:searchByDocumentNo" />
+
+<xs:element name="searchByDocumentNoResponse" type="tns:searchByDocumentNoResponse" />
+
+<xs:element name="searchByFingerAndPosition" type="tns:searchByFingerAndPosition" />
+
+<xs:element name="searchByFingerAndPositionResponse" type="tns:searchByFingerAndPositionResponse" />
+
+<xs:element name="searchByID" type="tns:searchByID" />
+
+<xs:element name="searchByIDResponse" type="tns:searchByIDResponse" />
+
+<xs:element name="searchByIDs" type="tns:searchByIDs" />
+
+<xs:element name="searchByIDsResponse" type="tns:searchByIDsResponse" />
+
+<xs:element name="searchByNIN" type="tns:searchByNIN" />
+
+<xs:element name="searchByNINResponse" type="tns:searchByNINResponse" />
+
+<xs:element name="searchByOneFingerRecursive" type="tns:searchByOneFingerRecursive" />
+
+<xs:element name="searchByOneFingerRecursiveResponse" type="tns:searchByOneFingerRecursiveResponse" />
+
+<xs:element name="transactionLogsORG" type="tns:transactionLogsORG" />
+
+<xs:element name="transactionLogsORGResponse" type="tns:transactionLogsORGResponse" />
+
+<xs:element name="transactionLogsRangeORG" type="tns:transactionLogsRangeORG" />
+
+<xs:element name="transactionLogsRangeORGResponse" type="tns:transactionLogsRangeORGResponse" />
+
+<xs:element name="transactionLogsRangeUSER" type="tns:transactionLogsRangeUSER" />
+
+<xs:element name="transactionLogsRangeUSERResponse" type="tns:transactionLogsRangeUSERResponse" />
+
+<xs:element name="transactionLogsUSER" type="tns:transactionLogsUSER" />
+
+<xs:element name="transactionLogsUSERResponse" type="tns:transactionLogsUSERResponse" />
+
+<xs:element name="transactioncountORG" type="tns:transactioncountORG" />
+
+<xs:element name="transactioncountORGResponse" type="tns:transactioncountORGResponse" />
+
+<xs:element name="transactioncountRangeORG" type="tns:transactioncountRangeORG" />
+
+<xs:element name="transactioncountRangeORGResponse" type="tns:transactioncountRangeORGResponse" />
+
+<xs:element name="transactioncountRangeUSER" type="tns:transactioncountRangeUSER" />
+
+<xs:element name="transactioncountRangeUSERResponse" type="tns:transactioncountRangeUSERResponse" />
+
+<xs:element name="transactioncountUSER" type="tns:transactioncountUSER" />
+
+<xs:element name="transactioncountUSERResponse" type="tns:transactioncountUSERResponse" />
+
+<xs:element name="unitsummaryASA" type="tns:unitsummaryASA" />
+
+<xs:element name="unitsummaryASAResponse" type="tns:unitsummaryASAResponse" />
+
+<xs:element name="unitsummaryORG" type="tns:unitsummaryORG" />
+
+<xs:element name="unitsummaryORGResponse" type="tns:unitsummaryORGResponse" />
+
+<xs:element name="validIDs" type="tns:validIDs" />
+
+<xs:element name="validIDsResponse" type="tns:validIDsResponse" />
+
+<xs:element name="verifyFinger" type="tns:verifyFinger" />
+
+<xs:element name="verifyFingerResponse" type="tns:verifyFingerResponse" />
+
+<xs:element name="verifyFingerWithData" type="tns:verifyFingerWithData" />
+
+<xs:element name="verifyFingerWithDataResponse" type="tns:verifyFingerWithDataResponse" />
+
+<xs:complexType name="searchByDemoNIN">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="demodata" type="tns:demoData" minOccurs="0" />
+<xs:element name="birthrange" type="tns:birthDateRangeType" minOccurs="0" />
+<xs:element name="heigthrange" type="tns:heigthRangeType" minOccurs="0" />
+<xs:element name="veriNIN" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="demoData">
+<xs:sequence>
+<xs:element name="birthcountry" type="xs:string" minOccurs="0" />
+<xs:element name="birthdate" type="xs:string" minOccurs="0" />
+<xs:element name="birthlga" type="xs:string" minOccurs="0" />
+<xs:element name="birthstate" type="xs:string" minOccurs="0" />
+<xs:element name="centralID" type="xs:string" minOccurs="0" />
+<xs:element name="documentno" type="xs:string" minOccurs="0" />
+<xs:element name="educationallevel" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="emplymentstatus" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="gender" type="xs:string" minOccurs="0" />
+<xs:element name="heigth" type="xs:string" minOccurs="0" />
+<xs:element name="maidenname" type="xs:string" minOccurs="0" />
+<xs:element name="maritalstatus" type="xs:string" minOccurs="0" />
+<xs:element name="middlename" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="nok_address1" type="xs:string" minOccurs="0" />
+<xs:element name="nok_address2" type="xs:string" minOccurs="0" />
+<xs:element name="nok_firstname" type="xs:string" minOccurs="0" />
+<xs:element name="nok_lga" type="xs:string" minOccurs="0" />
+<xs:element name="nok_middlename" type="xs:string" minOccurs="0" />
+<xs:element name="nok_postalcode" type="xs:string" minOccurs="0" />
+<xs:element name="nok_state" type="xs:string" minOccurs="0" />
+<xs:element name="nok_surname" type="xs:string" minOccurs="0" />
+<xs:element name="nok_town" type="xs:string" minOccurs="0" />
+<xs:element name="nspokenlang" type="xs:string" minOccurs="0" />
+<xs:element name="ospokenlang" type="xs:string" minOccurs="0" />
+<xs:element name="othername" type="xs:string" minOccurs="0" />
+<xs:element name="pfirstname" type="xs:string" minOccurs="0" />
+<xs:element name="photo" type="xs:string" minOccurs="0" />
+<xs:element name="pmiddlename" type="xs:string" minOccurs="0" />
+<xs:element name="profession" type="xs:string" minOccurs="0" />
+<xs:element name="psurname" type="xs:string" minOccurs="0" />
+<xs:element name="religion" type="xs:string" minOccurs="0" />
+<xs:element name="residence_AdressLine1" type="xs:string" minOccurs="0" />
+<xs:element name="residence_AdressLine2" type="xs:string" minOccurs="0" />
+<xs:element name="residence_Town" type="xs:string" minOccurs="0" />
+<xs:element name="residence_lga" type="xs:string" minOccurs="0" />
+<xs:element name="residence_postalcode" type="xs:string" minOccurs="0" />
+<xs:element name="residence_state" type="xs:string" minOccurs="0" />
+<xs:element name="residencestatus" type="xs:string" minOccurs="0" />
+<xs:element name="self_origin_lga" type="xs:string" minOccurs="0" />
+<xs:element name="self_origin_place" type="xs:string" minOccurs="0" />
+<xs:element name="self_origin_state" type="xs:string" minOccurs="0" />
+<xs:element name="signature" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="telephoneno" type="xs:string" minOccurs="0" />
+<xs:element name="title" type="xs:string" minOccurs="0" />
+<xs:element name="trackingId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="birthDateRangeType">
+<xs:sequence>
+<xs:element name="birthfrom" type="xs:string" minOccurs="0" />
+<xs:element name="birthto" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="heigthRangeType">
+<xs:sequence>
+<xs:element name="from" type="xs:int" />
+<xs:element name="to" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByDemoNINResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo2" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchResponseDemo2">
+<xs:sequence>
+<xs:element name="centralIDs" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="returnMessage" type="xs:string" minOccurs="0" />
+<xs:element name="totalrecord" type="xs:long" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkDuplicateUserForORGs">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="arg3" type="xs:string" minOccurs="0" />
+<xs:element name="arg4" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkDuplicateUserForORGsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unitsummaryORG">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unitsummaryORGResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:unitSummaryMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unitSummaryMsg">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="summary" type="tns:unitSummary" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unitSummary">
+<xs:sequence>
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="requesttype" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="totalunits" type="xs:string" minOccurs="0" />
+<xs:element name="usedunits" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginMessage">
+<xs:sequence>
+<xs:element name="approved" type="xs:string" minOccurs="0" />
+<xs:element name="asaid" type="xs:string" minOccurs="0" />
+<xs:element name="defaultpassword" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="orgaddress" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="result" type="xs:boolean" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="type" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAvailableUnits">
+<xs:sequence>
+<xs:element name="asa_username" type="xs:string" minOccurs="0" />
+<xs:element name="asa_passwd" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="request_type" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAvailableUnitsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:units" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="units">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="units" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="compareFinger">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="fingerStringInBase64One" type="xs:string" minOccurs="0" />
+<xs:element name="fingerStringInBase64Two" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="compareFingerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchResponse">
+<xs:sequence>
+<xs:element name="data" type="xs:string" minOccurs="0" />
+<xs:element name="returnMessage" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSignature">
+<xs:sequence>
+<xs:element name="centralId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSignatureResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByID">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usersMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usersMsg">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="users" type="tns:users" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="users">
+<xs:sequence>
+<xs:element name="aob" type="tns:accessObject" minOccurs="0" />
+<xs:element name="approved" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="type" type="xs:string" minOccurs="0" />
+<xs:element name="usercount" type="xs:int" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessObject">
+<xs:sequence>
+<xs:element name="bio" type="xs:boolean" />
+<xs:element name="demo" type="xs:boolean" />
+<xs:element name="doc" type="xs:boolean" />
+<xs:element name="level1" type="xs:boolean" />
+<xs:element name="level10" type="xs:boolean" />
+<xs:element name="level2" type="xs:boolean" />
+<xs:element name="level3" type="xs:boolean" />
+<xs:element name="level4" type="xs:boolean" />
+<xs:element name="level5" type="xs:boolean" />
+<xs:element name="level6" type="xs:boolean" />
+<xs:element name="level7" type="xs:boolean" />
+<xs:element name="level8" type="xs:boolean" />
+<xs:element name="level9" type="xs:boolean" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:boolean" />
+<xs:element name="ninbio" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsUSER">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsUSERResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactions" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactions">
+<xs:sequence>
+<xs:element name="logs" type="tns:transactionLogs" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogs">
+<xs:sequence>
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="inputparam" type="xs:string" minOccurs="0" />
+<xs:element name="machineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="requestType" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="transactionTime" type="xs:string" minOccurs="0" />
+<xs:element name="transid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByFingerAndPosition">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="fingerStringInBase64" type="xs:string" minOccurs="0" />
+<xs:element name="fingercode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByFingerAndPositionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByOneFingerRecursive">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="fingerStringInBase64" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByOneFingerRecursiveResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TransferUnits">
+<xs:sequence>
+<xs:element name="asa_username" type="xs:string" minOccurs="0" />
+<xs:element name="asa_passwd" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="receiverid" type="xs:string" minOccurs="0" />
+<xs:element name="request_type" type="xs:string" minOccurs="0" />
+<xs:element name="units" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TransferUnitsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByName">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="arg3" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByNameResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usersMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ApproveUser">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ApproveUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:checkerObject" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkerObject">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="result" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountUSER">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountUSERResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactionCountMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionCountMsg">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="tcount" type="tns:transactionCounts" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionCounts">
+<xs:sequence>
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="reqType" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="total" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByNIN">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByNINResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchResponseDemo">
+<xs:sequence>
+<xs:element name="data" type="tns:demoData" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="returnMessage" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAccountORGChecker">
+<xs:sequence>
+<xs:element name="asa_username" type="xs:string" minOccurs="0" />
+<xs:element name="asa_pwd" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="org_username" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="org_address" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="arg11" type="tns:accessObject" minOccurs="0" />
+<xs:element name="arg12" type="tns:status" minOccurs="0" />
+<xs:element name="arg13" type="xs:int" />
+<xs:element name="arg14" type="xs:string" minOccurs="0" />
+<xs:element name="arg15" type="xs:string" minOccurs="0" />
+<xs:element name="arg16" type="xs:string" minOccurs="0" />
+<xs:element name="arg17" type="xs:string" minOccurs="0" />
+<xs:element name="arg18" type="xs:string" minOccurs="0" />
+<xs:element name="arg19" type="xs:string" minOccurs="0" />
+<xs:element name="arg20" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAccountORGCheckerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeclineUser">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DeclineUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:checkerObject" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateUser">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="status" type="tns:status" minOccurs="0" />
+<xs:element name="arg9" type="tns:accessObject" minOccurs="0" />
+<xs:element name="arg10" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateUserSELF">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateUserSELFResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessList">
+<xs:sequence>
+<xs:element name="loginmessage" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:accessTypeMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessTypeMsg">
+<xs:sequence>
+<xs:element name="access" type="tns:accessType" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="parentsaccess" type="tns:accessType" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="requestType" type="tns:requestType" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="accessType">
+<xs:sequence>
+<xs:element name="level" type="xs:int" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="requestType">
+<xs:sequence>
+<xs:element name="bio" type="xs:string" minOccurs="0" />
+<xs:element name="demo" type="xs:string" minOccurs="0" />
+<xs:element name="doc" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="ninbio" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grantaccessType">
+<xs:sequence>
+<xs:element name="loginmessage" type="tns:loginMessage" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="requestType" type="tns:requestTypeEnum" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grantaccessTypeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:booleanMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="booleanMsg">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="result" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessObject">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAccessObjectResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:accessObject" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByID">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="revokeaccessType">
+<xs:sequence>
+<xs:element name="loginmessage" type="tns:loginMessage" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="requestType" type="tns:requestTypeEnum" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="revokeaccessTypeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:booleanMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsORG">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="search_userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsORGResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactions" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="revokeaccessDemo">
+<xs:sequence>
+<xs:element name="loginmessage" type="tns:loginMessage" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="level" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="revokeaccessDemoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:booleanMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyFingerWithData">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="fingerStringInBase64" type="xs:string" minOccurs="0" />
+<xs:element name="pos" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyFingerWithDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByDocumentNo">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByDocumentNoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllTopUpUnits">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllTopUpUnitsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loadedUnits" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loadedUnits">
+<xs:sequence>
+<xs:element name="logs" type="tns:loadedUnitLogs" nillable="true" minOccurs="0" maxOccurs="unbounded" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loadedUnitLogs">
+<xs:sequence>
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="receiverid" type="xs:string" minOccurs="0" />
+<xs:element name="requestType" type="xs:string" minOccurs="0" />
+<xs:element name="sourceid" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="transactionTime" type="xs:string" minOccurs="0" />
+<xs:element name="transid" type="xs:string" minOccurs="0" />
+<xs:element name="units" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAccountUSER">
+<xs:sequence>
+<xs:element name="org_username" type="xs:string" minOccurs="0" />
+<xs:element name="org_pwd" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="user_username" type="xs:string" minOccurs="0" />
+<xs:element name="orgname" type="xs:string" minOccurs="0" />
+<xs:element name="org_address" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="arg11" type="tns:accessObject" minOccurs="0" />
+<xs:element name="arg12" type="tns:status" minOccurs="0" />
+<xs:element name="arg13" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAccountUSERResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllUsers">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllUsersResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usersMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grantaccessDemo">
+<xs:sequence>
+<xs:element name="loginmessage" type="tns:loginMessage" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="level" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grantaccessDemoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:booleanMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unitsummaryASA">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="search_userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="unitsummaryASAResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:unitSummaryMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountRangeUSER">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="from_dd_mm_yyyy" type="xs:string" minOccurs="0" />
+<xs:element name="to_dd_mm_yyyy" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountRangeUSERResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactionCountMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="passwordchange">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="npassword" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="passwordchangeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountRangeORG">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="search_userid" type="xs:string" minOccurs="0" />
+<xs:element name="fromm" type="xs:string" minOccurs="0" />
+<xs:element name="too" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountRangeORGResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactionCountMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsRangeUSER">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="from_dd_mm_yyyy" type="xs:string" minOccurs="0" />
+<xs:element name="to_dd_mm_yyyy" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsRangeUSERResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactions" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPermissionByLevel2">
+<xs:sequence>
+<xs:element name="level" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPermissionByLevel2Response">
+<xs:sequence>
+<xs:element name="return" type="tns:demoMapPermission" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="demoMapPermission">
+<xs:sequence>
+<xs:element name="birthcountry" type="xs:boolean" minOccurs="0" />
+<xs:element name="birthdate" type="xs:boolean" minOccurs="0" />
+<xs:element name="birthlga" type="xs:boolean" minOccurs="0" />
+<xs:element name="birthstate" type="xs:boolean" minOccurs="0" />
+<xs:element name="documentno" type="xs:boolean" minOccurs="0" />
+<xs:element name="educationallevel" type="xs:boolean" minOccurs="0" />
+<xs:element name="email" type="xs:boolean" minOccurs="0" />
+<xs:element name="emplymentstatus" type="xs:boolean" minOccurs="0" />
+<xs:element name="firstname" type="xs:boolean" minOccurs="0" />
+<xs:element name="gender" type="xs:boolean" minOccurs="0" />
+<xs:element name="heigth" type="xs:boolean" minOccurs="0" />
+<xs:element name="maidenname" type="xs:boolean" minOccurs="0" />
+<xs:element name="maritalstatus" type="xs:boolean" minOccurs="0" />
+<xs:element name="message" type="xs:string" minOccurs="0" />
+<xs:element name="middlename" type="xs:boolean" minOccurs="0" />
+<xs:element name="nin" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_address1" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_address2" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_firstname" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_lga" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_middlename" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_postalcode" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_state" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_surname" type="xs:boolean" minOccurs="0" />
+<xs:element name="nok_town" type="xs:boolean" minOccurs="0" />
+<xs:element name="nspokenlang" type="xs:boolean" minOccurs="0" />
+<xs:element name="ospokenlang" type="xs:boolean" minOccurs="0" />
+<xs:element name="othername" type="xs:boolean" minOccurs="0" />
+<xs:element name="pfirstname" type="xs:boolean" minOccurs="0" />
+<xs:element name="photo" type="xs:boolean" minOccurs="0" />
+<xs:element name="pmiddlename" type="xs:boolean" minOccurs="0" />
+<xs:element name="profession" type="xs:boolean" minOccurs="0" />
+<xs:element name="psurname" type="xs:boolean" minOccurs="0" />
+<xs:element name="religion" type="xs:boolean" minOccurs="0" />
+<xs:element name="residence_AdressLine1" type="xs:boolean" minOccurs="0" />
+<xs:element name="residence_AdressLine2" type="xs:boolean" minOccurs="0" />
+<xs:element name="residence_Town" type="xs:boolean" minOccurs="0" />
+<xs:element name="residence_lga" type="xs:boolean" minOccurs="0" />
+<xs:element name="residence_postalcode" type="xs:boolean" minOccurs="0" />
+<xs:element name="residence_state" type="xs:boolean" minOccurs="0" />
+<xs:element name="residencestatus" type="xs:boolean" minOccurs="0" />
+<xs:element name="self_origin_lga" type="xs:boolean" minOccurs="0" />
+<xs:element name="self_origin_place" type="xs:boolean" minOccurs="0" />
+<xs:element name="self_origin_state" type="xs:boolean" minOccurs="0" />
+<xs:element name="signature" type="xs:boolean" minOccurs="0" />
+<xs:element name="surname" type="xs:boolean" minOccurs="0" />
+<xs:element name="telephoneno" type="xs:boolean" minOccurs="0" />
+<xs:element name="title" type="xs:boolean" minOccurs="0" />
+<xs:element name="userID" type="xs:boolean" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPermissionByLevel">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="level" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPermissionByLevelResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:demoMapPermission" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validIDs">
+<xs:sequence>
+<xs:element name="ids" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validIDsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo2" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountORG">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="search_userid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactioncountORGResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactionCountMsg" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateUserAndResetPassword">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="userid" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="firstname" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="status" type="tns:status" minOccurs="0" />
+<xs:element name="arg9" type="tns:accessObject" minOccurs="0" />
+<xs:element name="arg10" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UpdateUserAndResetPasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loginMessage" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AllTransfersByASA">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AllTransfersByASAResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:loadedUnits" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByDemo">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="demodata" type="tns:demoData" minOccurs="0" />
+<xs:element name="birthrange" type="tns:birthDateRangeType" minOccurs="0" />
+<xs:element name="heigthrange" type="tns:heigthRangeType" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByDemoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo2" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsRangeORG">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="search_userid" type="xs:string" minOccurs="0" />
+<xs:element name="from_dd_mm_yyyy" type="xs:string" minOccurs="0" />
+<xs:element name="to_dd_mm_yyyy" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="transactionLogsRangeORGResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:transactions" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByIDs">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByIDsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponseDemo" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyFinger">
+<xs:sequence>
+<xs:element name="MachineAddress" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+<xs:element name="orgid" type="xs:string" minOccurs="0" />
+<xs:element name="nin" type="xs:string" minOccurs="0" />
+<xs:element name="fingerStringInBase64" type="xs:string" minOccurs="0" />
+<xs:element name="pos" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyFingerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:searchResponse" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="status">
+<xs:restriction base="xs:string">
+<xs:enumeration value="active" />
+<xs:enumeration value="inactive" />
+</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="requestTypeEnum">
+<xs:restriction base="xs:string">
+<xs:enumeration value="nin" />
+<xs:enumeration value="ninbio" />
+<xs:enumeration value="doc" />
+<xs:enumeration value="bio" />
+<xs:enumeration value="demo" />
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
