@@ -13,6 +13,13 @@ pipeline {
 				archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
 			}
 		}
-		
+		stage('Deploy') {
+			steps {
+				echo 'Deploy build'
+				sh 'mvn clean package deploy'
+				archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+			}
 		}
-    }
+
+	}
+}
