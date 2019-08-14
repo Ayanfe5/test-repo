@@ -10,6 +10,7 @@ package com.seamfix.nimc.wsdl.stubs.verification;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -42,6 +43,7 @@ import javax.xml.bind.annotation.XmlType;
     "fingerStringInBase64",
     "pos"
 })
+@XmlRootElement
 public class VerifyFingerWithData {
 
     protected String token;
