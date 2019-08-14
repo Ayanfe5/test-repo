@@ -83,7 +83,7 @@ public class DEMOGRAPHICDATAType {
     @XmlElement(name = "EMAIL_ADDRESS", required = true)
     public String emailaddress;
     @XmlElement(name = "TELEPHONE_NO")
-    public int telephoneno;
+    public String telephoneno;
     @XmlElement(name = "HOMELESS_P", required = true)
     public String homelessp;
 
@@ -323,7 +323,7 @@ public class DEMOGRAPHICDATAType {
      * Gets the value of the telephoneno property.
      * 
      */
-    public int getTELEPHONENO() {
+    public String getTELEPHONENO() {
         return telephoneno;
     }
 
@@ -331,7 +331,7 @@ public class DEMOGRAPHICDATAType {
      * Sets the value of the telephoneno property.
      * 
      */
-    public void setTELEPHONENO(int value) {
+    public void setTELEPHONENO(String value) {
         this.telephoneno = value;
     }
 

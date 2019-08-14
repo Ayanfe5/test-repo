@@ -45,7 +45,8 @@ import javax.xml.bind.annotation.XmlType;
     "demographicdata",
     "residenceaddressdata",
     "origindata",
-    "biometricdata"
+    "biometricdata",
+    "applicantsignature"
 })
 public class ENROLLMENTDATAType {
 
@@ -59,6 +60,9 @@ public class ENROLLMENTDATAType {
     public ORIGINDATAType origindata;
     @XmlElement(name = "BIOMETRIC_DATA", required = true)
     public BIOMETRICDATAType biometricdata;
+    
+    @XmlElement(name = "APPLICANT_SIGNATURE", required = true)
+    public APPLICANTSIGNATUREDATAType applicantsignature;
 
     /**
      * Gets the value of the applicationdata property.
@@ -178,6 +182,30 @@ public class ENROLLMENTDATAType {
      */
     public void setBIOMETRICDATA(BIOMETRICDATAType value) {
         this.biometricdata = value;
+    }
+    
+    /**
+     * Gets the value of the biometricdata property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link APPLICANTSIGNATUREDATAType }
+     *     
+     */
+    public APPLICANTSIGNATUREDATAType getAPPLICANTSIGNATUREDATA() {
+        return applicantsignature;
+    }
+
+    /**
+     * Sets the value of the biometricdata property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link APPLICANTSIGNATUREDATAType }
+     *     
+     */
+    public void setAPPLICANTSIGNATUREDATA(APPLICANTSIGNATUREDATAType value) {
+        this.applicantsignature = value;
     }
 
 }

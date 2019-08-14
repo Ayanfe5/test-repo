@@ -58,7 +58,7 @@ public class RESIDENCEADDRESSDATAType {
     @XmlElement(name = "TOWN", required = true)
     protected String town;
     @XmlElement(name = "LGA")
-    protected int lga;
+    protected String lga;
     @XmlElement(name = "COUNTRY", required = true)
     protected String country;
 
@@ -154,7 +154,7 @@ public class RESIDENCEADDRESSDATAType {
      * Gets the value of the lga property.
      * 
      */
-    public int getLGA() {
+    public String getLGA() {
         return lga;
     }
 
@@ -162,7 +162,7 @@ public class RESIDENCEADDRESSDATAType {
      * Sets the value of the lga property.
      * 
      */
-    public void setLGA(int value) {
+    public void setLGA(String value) {
         this.lga = value;
     }
 
