@@ -9,9 +9,11 @@
 package com.seamfix.nimc.jaxb.enrollment;
 
 import java.math.BigDecimal;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -82,6 +84,11 @@ public class APPLICATIONDATAType {
     public String webenrollmentp;
     @XmlElement(name = "APPLICATION_FEE")
     public int applicationfee;
+    
+    //@XmlElement(name = "NATIONAL_IDENTIFICATION_NUMBER", required = true)
+    @XmlTransient
+    public BigDecimal nationalidentificationnumber;
+
 
     /**
      * Gets the value of the userid property.
@@ -321,6 +328,30 @@ public class APPLICATIONDATAType {
      */
     public void setAPPLICATIONFEE(int value) {
         this.applicationfee = value;
+    }
+    
+    /**
+     * Gets the value of the nationalidentificationnumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getNATIONALIDENTIFICATIONNUMBER() {
+        return nationalidentificationnumber;
+    }
+
+    /**
+     * Sets the value of the nationalidentificationnumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setNATIONALIDENTIFICATIONNUMBER(BigDecimal value) {
+        this.nationalidentificationnumber = value;
     }
 
 }

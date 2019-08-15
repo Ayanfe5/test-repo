@@ -9,6 +9,7 @@
 package com.seamfix.nimc.jaxb.enrollment;
 
 import java.math.BigDecimal;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -86,7 +87,7 @@ public class DEMOGRAPHICDATAType {
     public String telephoneno;
     @XmlElement(name = "HOMELESS_P", required = true)
     public String homelessp;
-
+    
     /**
      * Gets the value of the userid property.
      * 
