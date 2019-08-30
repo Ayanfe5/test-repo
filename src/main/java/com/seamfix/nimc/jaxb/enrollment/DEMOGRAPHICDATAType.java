@@ -10,6 +10,7 @@ package com.seamfix.nimc.jaxb.enrollment;
 
 import java.math.BigDecimal;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -49,6 +50,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DEMOGRAPHIC_DATAType", propOrder = {
     "userid",
+    "title",
     "surname",
     "firstname",
     "middlename",
@@ -65,6 +67,8 @@ public class DEMOGRAPHICDATAType {
 
     @XmlElement(name = "USER_ID", required = true)
     public BigDecimal userid;
+    @XmlElement(name = "TITLE", required = false)
+    public String title;
     @XmlElement(name = "SURNAME", required = true)
     public String surname;
     @XmlElement(name = "FIRST_NAME", required = true)
@@ -358,6 +362,30 @@ public class DEMOGRAPHICDATAType {
      */
     public void setHOMELESSP(String value) {
         this.homelessp = value;
+    }
+    
+    /**
+     * Gets the value of the title property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    public String getTITLE() {
+        return title;
+    }
+
+    /**
+     * Sets the value of the title property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    public void setTITLE(String value) {
+        this.title = value;
     }
 
 }

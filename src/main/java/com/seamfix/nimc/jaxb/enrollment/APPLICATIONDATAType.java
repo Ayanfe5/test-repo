@@ -13,7 +13,6 @@ import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -53,6 +52,7 @@ import javax.xml.bind.annotation.XmlType;
     "registrationdate",
     "originatingcenter",
     "loadingcenter",
+    "nationalidentificationnumber",
     "applicationtype",
     "stationid",
     "printingrequiredp",
@@ -85,8 +85,7 @@ public class APPLICATIONDATAType {
     @XmlElement(name = "APPLICATION_FEE")
     public int applicationfee;
     
-    //@XmlElement(name = "NATIONAL_IDENTIFICATION_NUMBER", required = true)
-    @XmlTransient
+    @XmlElement(name = "NATIONAL_IDENTIFICATION_NUMBER")
     public BigDecimal nationalidentificationnumber;
 
 
