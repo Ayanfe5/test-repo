@@ -84,7 +84,7 @@ public class DEMOGRAPHICDATAType {
     @XmlElement(name = "GENDER", required = true)
     public String gender;
     @XmlElement(name = "HEIGHT")
-    public int height;
+    public int height = 0;
     @XmlElement(name = "EMAIL_ADDRESS", required = true)
     public String emailaddress;
     @XmlElement(name = "TELEPHONE_NO")
