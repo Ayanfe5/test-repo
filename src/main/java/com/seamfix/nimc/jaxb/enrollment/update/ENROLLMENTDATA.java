@@ -1105,6 +1105,43 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
+ * &lt;complexType>
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="USER_ID">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               &lt;maxLength value="12"/>
+ *               &lt;minLength value="0"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="LEFT_IRIS">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}base64Binary">
+ *               &lt;maxLength value="2147483647"/>
+ *               &lt;minLength value="0"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ *  &lt;element name="RIGHT_IRIS">
+ *             &lt;simpleType>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}base64Binary">
+ *                 &lt;maxLength value="2147483647"/>
+ *                 &lt;minLength value="0"/>
+ *               &lt;/restriction>
+ *             &lt;/simpleType>
+ *           &lt;/element>
+ *         &lt;/sequence>
+ *       &lt;/restriction>
+ *     &lt;/complexContent>
+ *   &lt;/complexType>
+ *
  * </pre>
  * 
  * 
@@ -1151,6 +1188,8 @@ public class ENROLLMENTDATA {
     public BIOMETRICDATA biometricdata;
     @XmlElement(name = "APPLICANT_SIGNATURE", required = false)
     public APPLICANTSIGNATURE applicantsignature;
+    @XmlElement(name = "IRIS_DATA")
+    public IRISDATA irisdata;
 
     /**
      * Gets the value of the applicationdata property.
@@ -1443,6 +1482,30 @@ public class ENROLLMENTDATA {
      */
     public void setAPPLICANTSIGNATURE(APPLICANTSIGNATURE value) {
         this.applicantsignature = value;
+    }
+
+    /**
+     * Gets the value of the irisdata property.
+     *
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link IRISDATA }{@code >}
+     *
+     */
+    public IRISDATA getIRISDATA() {
+        return irisdata;
+    }
+
+    /**
+     * Sets the value of the irisdata property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link IRISDATA }{@code >}
+     *
+     */
+    public void setIRISDATA(IRISDATA value) {
+        this.irisdata = irisdata;
     }
 
 }
