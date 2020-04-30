@@ -1148,18 +1148,20 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "applicationdata",
-    "demographicdata",
-    "documentdata",
-    "residenceaddressdata",
-    "physicalfeaturedata",
-    "disabilitydata",
-    "parentdata",
-    "guardiandata",
-    "nextofkindata",
-    "cardfinancialdata",
-    "biometricdata",
-    "applicantsignature"
+        "applicationdata",
+        "demographicdata",
+        "documentdata",
+        "residenceaddressdata",
+        "physicalfeaturedata",
+        "disabilitydata",
+        "parentdata",
+        "guardiandata",
+        "nextofkindata",
+        "cardfinancialdata",
+        "biometricdata",
+        "applicantsignature",
+        "irisdata"
+
 })
 @XmlRootElement(name = "ENROLLMENT_DATA")
 public class ENROLLMENTDATA {
@@ -1505,7 +1507,7 @@ public class ENROLLMENTDATA {
      *
      */
     public void setIRISDATA(IRISDATA value) {
-        this.irisdata = irisdata;
+        this.irisdata = value;
     }
 
 }
