@@ -18,7 +18,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.seamfix.nimc.jaxb.enrollment.update.DOCUMENTDATA;
-import com.seamfix.nimc.jaxb.enrollment.update.IRISDATA;
 
 
 /**
@@ -53,8 +52,7 @@ import com.seamfix.nimc.jaxb.enrollment.update.IRISDATA;
         "residenceaddressdata",
         "origindata",
         "biometricdata",
-        "applicantsignature",
-        "irisdata"
+        "applicantsignature"
 })
 public class ENROLLMENTDATAType {
 
@@ -76,8 +74,6 @@ public class ENROLLMENTDATAType {
     @XmlElement(name = "APPLICANT_SIGNATURE", required = true)
     public APPLICANTSIGNATUREDATAType applicantsignature;
 
-    @XmlElement(name = "IRIS_DATA")
-    public IRISDATAType irisdata;
 
     /**
      * Gets the value of the applicationdata property.
@@ -252,27 +248,4 @@ public class ENROLLMENTDATAType {
         this.applicantsignature = value;
     }
 
-    /**
-     * Gets the value of the irisdata property.
-     *
-     * @return
-     *     possible object is
-     *     {@link IRISDATAType }
-     *
-     */
-    public IRISDATAType getIRISDATA() {
-        return irisdata;
-    }
-
-    /**
-     * Sets the value of the irisdata property.
-     *
-     * @param value
-     *     allowed object is
-     *     {@link IRISDATAType }
-     *
-     */
-    public void setIRISDATA(IRISDATAType value) {
-        this.irisdata = value;
-    }
 }

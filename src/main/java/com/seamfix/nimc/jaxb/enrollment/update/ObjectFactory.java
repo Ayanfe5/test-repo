@@ -101,7 +101,8 @@ public class ObjectFactory {
     private final static QName _NEXTOFKINDATANATIONALIDENTIFICATIONNUMBER_QNAME = new QName("", "NATIONAL_IDENTIFICATION_NUMBER");
     private final static QName _GUARDIANDATAGUARDIANMIDDLENAME_QNAME = new QName("", "GUARDIAN_MIDDLE_NAME");
     private final static QName _GUARDIANDATAGUARDIANIDENTIFICATIONNUMBER_QNAME = new QName("", "GUARDIAN_IDENTIFICATION_NUMBER");
-    private final static QName _ENROLLMENTDATAIRISDATA_QNAME = new QName("", "IRIS_DATA");
+    private final static QName _BIOMETRICDATALEFTEYE_QNAME = new QName("", "LEFT_EYE");
+    private final static QName _BIOMETRICDATARIGHTEYE_QNAME = new QName("", "RIGHT_EYE");
 
    
     /**
@@ -231,13 +232,7 @@ public class ObjectFactory {
     public APPLICANTNAME createAPPLICANTNAME() {
         return new APPLICANTNAME();
     }
-    /**
-     * Create an instance of {@link IRISDATA }
-     *
-     */
-    public IRISDATA createIRISDATA() {
-        return new IRISDATA();
-    }
+
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      * 
@@ -425,6 +420,23 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "", name = "RIGHT_LITTLE_QUALITY", scope = BIOMETRICDATA.class)
     public JAXBElement<BigDecimal> createBIOMETRICDATARIGHTLITTLEQUALITY(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_BIOMETRICDATARIGHTLITTLEQUALITY_QNAME, BigDecimal.class, BIOMETRICDATA.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link byte[]}{@code >}}
+     *
+     */
+    @XmlElementDecl(namespace = "", name = "RIGHT_EYE", scope = BIOMETRICDATA.class)
+    public JAXBElement<byte[]> createBIOMETRICDATARIGHTEYE(byte[] value) {
+        return new JAXBElement<byte[]>(_BIOMETRICDATALEFTEYE_QNAME, byte[].class, BIOMETRICDATA.class, ((byte[]) value));
+    }
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link byte[]}{@code >}}
+     *
+     */
+    @XmlElementDecl(namespace = "", name = "LEFT_EYE", scope = BIOMETRICDATA.class)
+    public JAXBElement<byte[]> createBIOMETRICDATALEFTEYE(byte[] value) {
+        return new JAXBElement<byte[]>(_BIOMETRICDATARIGHTEYE_QNAME, byte[].class, BIOMETRICDATA.class, ((byte[]) value));
     }
 
     /**
@@ -867,12 +879,5 @@ public class ObjectFactory {
     public JAXBElement<BigDecimal> createGUARDIANDATAGUARDIANIDENTIFICATIONNUMBER(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GUARDIANDATAGUARDIANIDENTIFICATIONNUMBER_QNAME, BigDecimal.class, GUARDIANDATA.class, value);
     }
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IRISDATA }{@code >}}
-     *
-     */
-    @XmlElementDecl(namespace = "", name = "IRIS_DATA", scope = ENROLLMENTDATA.class)
-    public JAXBElement<IRISDATA> createENROLLMENTDATAIRISDATA_QNAME(IRISDATA value) {
-        return new JAXBElement<IRISDATA>(_ENROLLMENTDATAIRISDATA_QNAME, IRISDATA.class, ENROLLMENTDATA.class, value);
-    }
+
 }
