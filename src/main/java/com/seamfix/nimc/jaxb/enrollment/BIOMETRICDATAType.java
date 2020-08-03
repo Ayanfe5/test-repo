@@ -167,6 +167,14 @@ public class BIOMETRICDATAType {
     public String rightlittle;
     @XmlElement(name = "PHOTOGRAPH", required = true)
     public String photograph;
+    @XmlElement(name = "LEFT_EYE_STATUS", required = true)
+    public String lefteyestatus;
+    @XmlElement(name = "LEFT_EYE")
+    public byte[] lefteye;
+    @XmlElement(name = "RIGHT_EYE_STATUS", required = true)
+    public String righteyestatus;
+    @XmlElement(name = "RIGHT_EYE")
+    public byte[] righteye;
 
     /**
      * Gets the value of the userid property.
@@ -854,6 +862,98 @@ public class BIOMETRICDATAType {
      */
     public void setPHOTOGRAPH(String value) {
         this.photograph = value;
+    }
+
+    /**
+     * Gets the value of the left eye property.
+            *
+            * @return
+            *     possible object is
+     *     byte[]
+     */
+    public byte[] getLEFTEYE() {
+        return lefteye;
+    }
+
+    /**
+     * Sets the value of the left eye property.
+     *
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setLEFTEYE(byte[] value) {
+        this.lefteye = value;
+    }
+
+    /**
+     * Gets the value of the right eye property.
+     *
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getRIGHTEYE() {
+        return righteye;
+    }
+
+    /**
+     * Sets the value of the right eye property.
+     *
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setRIGHTEYE(byte[] value) {
+        this.righteye = value;
+    }
+
+    /**
+     * Gets the value of the righteyestatus property.
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getRIGHTEYESTATUS() {
+        return righteyestatus;
+    }
+
+    /**
+     * Sets the value of the righteyestatus property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setRIGHTEYESTATUS(String value) {
+        this.righteyestatus = value;
+    }
+
+    /**
+     * Gets the value of the lefteyestatus property.
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getLEFTEYESTATUS() {
+        return lefteyestatus;
+    }
+
+    /**
+     * Sets the value of the lefteyestatus property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setLEFTEYESTATUS(String value) {
+        this.lefteyestatus = value;
     }
 
 }

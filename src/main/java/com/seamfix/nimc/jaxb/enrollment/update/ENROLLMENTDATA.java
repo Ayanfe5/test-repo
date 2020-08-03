@@ -1159,8 +1159,7 @@ import javax.xml.bind.annotation.XmlType;
         "nextofkindata",
         "cardfinancialdata",
         "biometricdata",
-        "applicantsignature",
-        "irisdata"
+        "applicantsignature"
 
 })
 @XmlRootElement(name = "ENROLLMENT_DATA")
@@ -1190,8 +1189,6 @@ public class ENROLLMENTDATA {
     public BIOMETRICDATA biometricdata;
     @XmlElement(name = "APPLICANT_SIGNATURE", required = false)
     public APPLICANTSIGNATURE applicantsignature;
-    @XmlElement(name = "IRIS_DATA")
-    public IRISDATA irisdata;
 
     /**
      * Gets the value of the applicationdata property.
@@ -1486,28 +1483,5 @@ public class ENROLLMENTDATA {
         this.applicantsignature = value;
     }
 
-    /**
-     * Gets the value of the irisdata property.
-     *
-     * @return
-     *     possible object is
-     *     {@link JAXBElement }{@code <}{@link IRISDATA }{@code >}
-     *
-     */
-    public IRISDATA getIRISDATA() {
-        return irisdata;
-    }
-
-    /**
-     * Sets the value of the irisdata property.
-     *
-     * @param value
-     *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link IRISDATA }{@code >}
-     *
-     */
-    public void setIRISDATA(IRISDATA value) {
-        this.irisdata = value;
-    }
 
 }
