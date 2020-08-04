@@ -450,11 +450,11 @@ public class BIOMETRICDATA {
     @XmlElement(name = "LEFT_EYE_STATUS", required = true)
     public String lefteyestatus;
     @XmlElement(name = "LEFT_EYE")
-    public String lefteye;
+    public byte[] lefteye;
     @XmlElement(name = "RIGHT_EYE_STATUS", required = true)
     public String righteyestatus;
     @XmlElement(name = "RIGHT_EYE")
-    public String righteye;
+    public byte[] righteye;
 
 
     /**
@@ -1229,7 +1229,7 @@ public class BIOMETRICDATA {
      *     possible object is
      *     byte[]
      */
-    public String getLEFTEYE() {
+    public byte[] getLEFTEYE() {
         return lefteye;
     }
 
@@ -1240,7 +1240,7 @@ public class BIOMETRICDATA {
      *     allowed object is
      *     byte[]
      */
-    public void setLEFTEYE(String value) {
+    public void setLEFTEYE(byte[] value) {
         this.lefteye = value;
     }
 
@@ -1251,7 +1251,7 @@ public class BIOMETRICDATA {
      *     possible object is
      *     byte[]
      */
-    public String getRIGHTEYE() {
+    public byte[] getRIGHTEYE() {
         return righteye;
     }
 
@@ -1262,7 +1262,7 @@ public class BIOMETRICDATA {
      *     allowed object is
      *     byte[]
      */
-    public void setRIGHTEYE(String value) {
+    public void setRIGHTEYE(byte[] value) {
         this.righteye = value;
     }
 

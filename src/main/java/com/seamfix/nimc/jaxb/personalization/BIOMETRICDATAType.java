@@ -873,7 +873,7 @@ public class BIOMETRICDATAType {
             *
             * @return
             *     possible object is
-     *     byte[]
+     *     {@link String }
      */
     public String getLEFTEYE() {
         return lefteye;
@@ -884,7 +884,7 @@ public class BIOMETRICDATAType {
      *
      * @param value
      *     allowed object is
-     *     byte[]
+     *     {@link String }
      */
     public void setLEFTEYE(String value) {
         this.lefteye = value;
@@ -895,7 +895,7 @@ public class BIOMETRICDATAType {
      *
      * @return
      *     possible object is
-     *     byte[]
+     *     {@link String }
      */
     public String getRIGHTEYE() {
         return righteye;
@@ -906,7 +906,7 @@ public class BIOMETRICDATAType {
      *
      * @param value
      *     allowed object is
-     *     byte[]
+     *     {@link String }
      */
     public void setRIGHTEYE(String value) {
         this.righteye = value;
