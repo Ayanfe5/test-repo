@@ -98,7 +98,11 @@ import javax.xml.bind.annotation.XmlType;
     "rightmiddle",
     "rightring",
     "rightlittle",
-    "photograph"
+    "photograph",
+      "lefteyestatus",
+     "lefteye",
+     "righteyestatus",
+     "righteye"
 })
 @SuppressWarnings("PMD.ExcessivePublicCount")
 public class BIOMETRICDATAType {
