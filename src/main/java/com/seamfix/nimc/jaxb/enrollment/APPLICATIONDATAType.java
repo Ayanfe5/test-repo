@@ -69,9 +69,9 @@ public class APPLICATIONDATAType {
     @XmlElement(name = "REGISTRATION_DATE", required = true)
     public String registrationdate;
     @XmlElement(name = "ORIGINATING_CENTER")
-    public int originatingcenter;
+    public String originatingcenter;
     @XmlElement(name = "LOADING_CENTER")
-    public int loadingcenter;
+    public String loadingcenter;
     @XmlElement(name = "APPLICATION_TYPE", required = true)
     public String applicationtype;
     @XmlElement(name = "STATION_ID", required = true)
@@ -165,7 +165,7 @@ public class APPLICATIONDATAType {
      * Gets the value of the originatingcenter property.
      * 
      */
-    public int getORIGINATINGCENTER() {
+    public String getORIGINATINGCENTER() {
         return originatingcenter;
     }
 
@@ -173,7 +173,7 @@ public class APPLICATIONDATAType {
      * Sets the value of the originatingcenter property.
      * 
      */
-    public void setORIGINATINGCENTER(int value) {
+    public void setORIGINATINGCENTER(String value) {
         this.originatingcenter = value;
     }
 
@@ -181,7 +181,7 @@ public class APPLICATIONDATAType {
      * Gets the value of the loadingcenter property.
      * 
      */
-    public int getLOADINGCENTER() {
+    public String getLOADINGCENTER() {
         return loadingcenter;
     }
 
@@ -189,7 +189,7 @@ public class APPLICATIONDATAType {
      * Sets the value of the loadingcenter property.
      * 
      */
-    public void setLOADINGCENTER(int value) {
+    public void setLOADINGCENTER(String value) {
         this.loadingcenter = value;
     }
 
