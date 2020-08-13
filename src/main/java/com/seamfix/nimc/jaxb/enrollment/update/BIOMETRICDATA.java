@@ -378,7 +378,7 @@ import javax.xml.bind.annotation.XmlType;
      "lefteyestatus",
       "lefteye",
       "righteyestatus",
-      "righteye",
+      "righteye"
 })
 @SuppressWarnings({"PMD.ExcessivePublicCount","PMD.MethodReturnsInternalArray","PMD.ArrayIsStoredDirectly"})
 public class BIOMETRICDATA {

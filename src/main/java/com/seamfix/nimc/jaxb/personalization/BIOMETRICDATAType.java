@@ -57,6 +57,10 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="RIGHT_RING" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="RIGHT_LITTLE" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="PHOTOGRAPH" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="LEFT_EYE_STATUS" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *        &lt;element name="LEFT_EYE" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *        &lt;element name="RIGHT_EYE_STATUS" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *        &lt;element name="RIGHT_EYE" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -98,7 +102,11 @@ import javax.xml.bind.annotation.XmlType;
     "rightmiddle",
     "rightring",
     "rightlittle",
-    "photograph"
+    "photograph",
+     "lefteyestatus",
+     "lefteye",
+     "righteyestatus",
+     "righteye"
 })
 @SuppressWarnings({"PMD.ExcessivePublicCount"})
 public class BIOMETRICDATAType {
@@ -167,6 +175,14 @@ public class BIOMETRICDATAType {
     protected String rightlittle;
     @XmlElement(name = "PHOTOGRAPH", required = true)
     protected String photograph;
+    @XmlElement(name = "LEFT_EYE_STATUS", required = true)
+    public String lefteyestatus;
+    @XmlElement(name = "LEFT_EYE")
+    public String lefteye;
+    @XmlElement(name = "RIGHT_EYE_STATUS", required = true)
+    public String righteyestatus;
+    @XmlElement(name = "RIGHT_EYE")
+    public String righteye;
 
     /**
      * Gets the value of the userid property.
@@ -855,5 +871,98 @@ public class BIOMETRICDATAType {
     public void setPHOTOGRAPH(String value) {
         this.photograph = value;
     }
+
+    /**
+       * Gets the value of the left eye property.
+            *
+            * @return
+            *     possible object is
+     *     {@link String }
+     */
+    public String getLEFTEYE() {
+        return lefteye;
+    }
+
+    /**
+     * Sets the value of the left eye property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     */
+    public void setLEFTEYE(String value) {
+        this.lefteye = value;
+    }
+
+    /**
+     * Gets the value of the right eye property.
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     */
+    public String getRIGHTEYE() {
+        return righteye;
+    }
+
+    /**
+     * Sets the value of the right eye property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     */
+    public void setRIGHTEYE(String value) {
+        this.righteye = value;
+    }
+
+    /**
+     * Gets the value of the righteyestatus property.
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getRIGHTEYESTATUS() {
+        return righteyestatus;
+    }
+
+    /**
+     * Sets the value of the righteyestatus property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setRIGHTEYESTATUS(String value) {
+        this.righteyestatus = value;
+    }
+
+    /**
+     * Gets the value of the lefteyestatus property.
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getLEFTEYESTATUS() {
+        return lefteyestatus;
+    }
+
+    /**
+     * Sets the value of the lefteyestatus property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setLEFTEYESTATUS(String value) {
+        this.lefteyestatus = value;
+    }
+
 
 }
