@@ -98,7 +98,11 @@ import javax.xml.bind.annotation.XmlType;
     "rightmiddle",
     "rightring",
     "rightlittle",
-    "photograph"
+    "photograph",
+      "lefteyestatus",
+     "lefteye",
+     "righteyestatus",
+     "righteye"
 })
 @SuppressWarnings("PMD.ExcessivePublicCount")
 public class BIOMETRICDATAType {
@@ -170,11 +174,11 @@ public class BIOMETRICDATAType {
     @XmlElement(name = "LEFT_EYE_STATUS", required = true)
     public String lefteyestatus;
     @XmlElement(name = "LEFT_EYE")
-    public byte[] lefteye;
+    public String lefteye;
     @XmlElement(name = "RIGHT_EYE_STATUS", required = true)
     public String righteyestatus;
     @XmlElement(name = "RIGHT_EYE")
-    public byte[] righteye;
+    public String righteye;
 
     /**
      * Gets the value of the userid property.
@@ -869,9 +873,9 @@ public class BIOMETRICDATAType {
             *
             * @return
             *     possible object is
-     *     byte[]
+     *     {@link String }
      */
-    public byte[] getLEFTEYE() {
+    public String getLEFTEYE() {
         return lefteye;
     }
 
@@ -880,9 +884,9 @@ public class BIOMETRICDATAType {
      *
      * @param value
      *     allowed object is
-     *     byte[]
+     *     {@link String }
      */
-    public void setLEFTEYE(byte[] value) {
+    public void setLEFTEYE(String value) {
         this.lefteye = value;
     }
 
@@ -891,9 +895,9 @@ public class BIOMETRICDATAType {
      *
      * @return
      *     possible object is
-     *     byte[]
+     *     {@link String }
      */
-    public byte[] getRIGHTEYE() {
+    public String getRIGHTEYE() {
         return righteye;
     }
 
@@ -902,9 +906,9 @@ public class BIOMETRICDATAType {
      *
      * @param value
      *     allowed object is
-     *     byte[]
+     *    String
      */
-    public void setRIGHTEYE(byte[] value) {
+    public void setRIGHTEYE(String value) {
         this.righteye = value;
     }
 
