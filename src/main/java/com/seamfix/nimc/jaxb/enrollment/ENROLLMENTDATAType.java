@@ -11,6 +11,7 @@ package com.seamfix.nimc.jaxb.enrollment;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -51,6 +52,7 @@ import com.seamfix.nimc.jaxb.enrollment.update.DOCUMENTDATA;
         "documentdata",
         "residenceaddressdata",
         "origindata",
+        "guardiandata",
         "biometricdata",
         "applicantsignature"
 })
@@ -68,6 +70,10 @@ public class ENROLLMENTDATAType {
     public RESIDENCEADDRESSDATAType residenceaddressdata;
     @XmlElement(name = "ORIGIN_DATA", required = true)
     public ORIGINDATAType origindata;
+
+    @XmlElement(name = "GUARDIAN_DATA", required = false)
+    public GUARDIANDATAType guardiandata;
+
     @XmlElement(name = "BIOMETRIC_DATA", required = true)
     public BIOMETRICDATAType biometricdata;
     
@@ -246,6 +252,30 @@ public class ENROLLMENTDATAType {
      */
     public void setAPPLICANTSIGNATUREDATA(APPLICANTSIGNATUREDATAType value) {
         this.applicantsignature = value;
+    }
+
+    /**
+     * Gets the value of the guardiandata property.
+     *
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link GUARDIANDATAType }{@code >}
+     *
+     */
+    public GUARDIANDATAType getGUARDIANDATAType() {
+        return guardiandata;
+    }
+
+    /**
+     * Sets the value of the guardiandatatype property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link GUARDIANDATAType }{@code >}
+     *
+     */
+    public void setGUARDIANDATAType(GUARDIANDATAType value) {
+        this.guardiandata = value;
     }
 
 }
