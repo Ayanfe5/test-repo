@@ -19,7 +19,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import com.seamfix.nimc.jaxb.enrollment.update.DOCUMENTDATA;
-import com.seamfix.nimc.jaxb.enrollment.update.GUARDIANDATA;
 
 
 /**
@@ -73,7 +72,7 @@ public class ENROLLMENTDATAType {
     public ORIGINDATAType origindata;
 
     @XmlElement(name = "GUARDIAN_DATA", required = false)
-    public GUARDIANDATA guardiandata;
+    public GUARDIANDATAType guardiandata;
 
     @XmlElement(name = "BIOMETRIC_DATA", required = true)
     public BIOMETRICDATAType biometricdata;
@@ -260,22 +259,22 @@ public class ENROLLMENTDATAType {
      *
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link GUARDIANDATA }{@code >}
+     *     {@link JAXBElement }{@code <}{@link GUARDIANDATAType }{@code >}
      *
      */
-    public GUARDIANDATA getGUARDIANDATA() {
+    public GUARDIANDATAType getGUARDIANDATAType() {
         return guardiandata;
     }
 
     /**
-     * Sets the value of the guardiandata property.
+     * Sets the value of the guardiandatatype property.
      *
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link GUARDIANDATA }{@code >}
+     *     {@link JAXBElement }{@code <}{@link GUARDIANDATAType }{@code >}
      *
      */
-    public void setGUARDIANDATA(GUARDIANDATA value) {
+    public void setGUARDIANDATAType(GUARDIANDATAType value) {
         this.guardiandata = value;
     }
 
