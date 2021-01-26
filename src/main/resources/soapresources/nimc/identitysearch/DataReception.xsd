@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://frontend.ws.nimc.gov.ng/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://frontend.ws.nimc.gov.ng/">
+
+<xs:element name="InvalidRequestException" type="tns:InvalidRequestException"></xs:element>
+
+<xs:element name="InvalidXMLDataException" type="tns:InvalidXMLDataException"></xs:element>
+
+<xs:element name="receiveDeathData" type="tns:receiveDeathData"></xs:element>
+
+<xs:element name="receiveDeathDataResponse" type="tns:receiveDeathDataResponse"></xs:element>
+
+<xs:element name="receiveModificationData" type="tns:receiveModificationData"></xs:element>
+
+<xs:element name="receiveModificationDataResponse" type="tns:receiveModificationDataResponse"></xs:element>
+
+<xs:element name="receiveNewData" type="tns:receiveNewData"></xs:element>
+
+<xs:element name="receiveNewDataResponse" type="tns:receiveNewDataResponse"></xs:element>
+
+<xs:element name="receiveReprintData" type="tns:receiveReprintData"></xs:element>
+
+<xs:element name="receiveReprintDataResponse" type="tns:receiveReprintDataResponse"></xs:element>
+
+<xs:complexType name="receiveDeathData">
+<xs:sequence>
+<xs:element name="userName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="trackingId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="centerId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="data" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveDeathDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:registrationResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registrationResponse">
+<xs:sequence>
+<xs:element name="returnCode" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="returnMessage" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InvalidRequestException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InvalidXMLDataException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveReprintData">
+<xs:sequence>
+<xs:element name="userName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="trackingId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="centerId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="data" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveReprintDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:registrationResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveModificationData">
+<xs:sequence>
+<xs:element name="userName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="trackingId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="centerId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="data" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveModificationDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:registrationResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveNewData">
+<xs:sequence>
+<xs:element name="userName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="password" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="trackingId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="centerId" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="data" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="receiveNewDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:registrationResponse" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
