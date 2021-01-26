@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "DataReceptionService", targetNamespace = "http://frontend.ws.nimc.gov.ng/", wsdlLocation = "file:/C:/Users/amorakinyo/Downloads/DataReception/DataReception.wsdl")
+@WebServiceClient(name = "DataReceptionService", targetNamespace = "http://frontend.ws.nimc.gov.ng/", wsdlLocation = "http://13.56.69.207:8090/nimcdataupload/DataReception?wsdl")
 public class DataReceptionService
     extends Service
 {
@@ -30,7 +30,7 @@ public class DataReceptionService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/amorakinyo/Downloads/DataReception/DataReception.wsdl");
+            url = new URL("http://13.56.69.207:8090/nimcdataupload/DataReception?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
