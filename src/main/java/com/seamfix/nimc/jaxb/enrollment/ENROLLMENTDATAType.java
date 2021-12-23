@@ -278,4 +278,7 @@ public class ENROLLMENTDATAType {
         this.guardiandata = value;
     }
 
+    public void setDocumentdata(List<DOCUMENTDATA> documentdata) {
+        this.documentdata = documentdata;
+    }
 }
