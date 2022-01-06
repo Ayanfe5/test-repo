@@ -6,7 +6,7 @@
 
     <groupId>com.seamfix.integrations</groupId>
     <artifactId>nimc-stubs</artifactId>
-    <version>1.2.1-FINAL</version>
+    <version>1.2.2-FINAL</version>
     <description>Stubs generated from NIMC wsdls for NIN enrollment, verification, etc</description>
     
     <properties>

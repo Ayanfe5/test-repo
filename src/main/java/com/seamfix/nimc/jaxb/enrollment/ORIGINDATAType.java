@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ORIGIN_DATAType complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="ORIGIN_DATAType"&gt;
  *   &lt;complexContent&gt;
@@ -33,15 +33,14 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ORIGIN_DATAType", propOrder = {
-    "relation",
-    "originplace",
-    "originstate",
-    "origincountry"
+        "relation",
+        "originplace",
+        "originstate",
+        "originlga",
+        "origincountry"
 })
 public class ORIGINDATAType {
 
@@ -49,18 +48,18 @@ public class ORIGINDATAType {
     public String relation;
     @XmlElement(name = "ORIGIN_PLACE", required = true)
     public String originplace;
-    @XmlElement(name = "ORIGIN_STATE", required = true)
+    @XmlElement(name = "ORIGIN_STATE")
     public String originstate;
-    @XmlElement(name = "ORIGIN_COUNTRY", required = true)
+    @XmlElement(name = "ORIGIN_LGA")
+    public String originlga;
+    @XmlElement(name = "ORIGIN_COUNTRY")
     public String origincountry;
 
     /**
      * Gets the value of the relation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getRELATION() {
         return relation;
@@ -68,11 +67,9 @@ public class ORIGINDATAType {
 
     /**
      * Sets the value of the relation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setRELATION(String value) {
         this.relation = value;
@@ -80,11 +77,9 @@ public class ORIGINDATAType {
 
     /**
      * Gets the value of the originplace property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getORIGINPLACE() {
         return originplace;
@@ -92,11 +87,9 @@ public class ORIGINDATAType {
 
     /**
      * Sets the value of the originplace property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setORIGINPLACE(String value) {
         this.originplace = value;
@@ -104,11 +97,9 @@ public class ORIGINDATAType {
 
     /**
      * Gets the value of the originstate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getORIGINSTATE() {
         return originstate;
@@ -116,11 +107,9 @@ public class ORIGINDATAType {
 
     /**
      * Sets the value of the originstate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setORIGINSTATE(String value) {
         this.originstate = value;
@@ -128,23 +117,40 @@ public class ORIGINDATAType {
 
     /**
      * Gets the value of the origincountry property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
+    public String getORIGINLGA() {
+        return originlga;
+    }
+
+    /**
+     * Sets the value of the originlga property.
+     *
+     * @param value allowed object is
+     *              {@link String }
+     */
+    public void setORIGINLGA(String value) {
+        this.originlga = value;
+    }
+
+    /**
+     * Gets the value of the originlga property.
+     *
+     * @return possible object is
+     * {@link String }
+     */
+
     public String getORIGINCOUNTRY() {
         return origincountry;
     }
 
     /**
      * Sets the value of the origincountry property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setORIGINCOUNTRY(String value) {
         this.origincountry = value;
