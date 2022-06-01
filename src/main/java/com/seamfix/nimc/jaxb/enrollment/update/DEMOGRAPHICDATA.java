@@ -242,25 +242,26 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "applicantname",
-    "maidenname",
-    "othernames",
-    "nationality",
-    "birthdateverifyp",
-    "maritalstatus",
-    "spouseidentificationnumber",
-    "height",
-    "residencestatus",
-    "religion",
-    "emailaddress",
-    "telephoneno",
-    "nativespokenlanguage",
-    "otherspokenlanguage",
-    "readwritelanguage",
-    "educationlevel",
-    "profession",
-    "employmentstatus",
-    "homelessp"
+        "applicantname",
+        "maidenname",
+        "othernames",
+        "nationality",
+        "birthdate",
+        "birthdateverifyp",
+        "maritalstatus",
+        "spouseidentificationnumber",
+        "height",
+        "residencestatus",
+        "religion",
+        "emailaddress",
+        "telephoneno",
+        "nativespokenlanguage",
+        "otherspokenlanguage",
+        "readwritelanguage",
+        "educationlevel",
+        "profession",
+        "employmentstatus",
+        "homelessp"
 })
 @SuppressWarnings("PMD.ExcessivePublicCount")
 public class DEMOGRAPHICDATA {
@@ -303,6 +304,8 @@ public class DEMOGRAPHICDATA {
     public String employmentstatus;
     @XmlElement(name = "HOMELESS_P", required = false)
     public String homelessp;
+    @XmlElement(name = "BIRTH_DATE")
+    public String birthdate;
 
     /**
      * Gets the value of the applicantname property.
@@ -758,6 +761,30 @@ public class DEMOGRAPHICDATA {
      */
     public void setHOMELESSP(String  value) {
         this.homelessp = value;
+    }
+
+    /**
+     * Gets the value of the birthdate property.
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getBIRTHDATE() {
+        return birthdate;
+    }
+
+    /**
+     * Sets the value of the birthdate property.
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setBIRTHDATE(String value) {
+        this.birthdate = value;
     }
 
 }
