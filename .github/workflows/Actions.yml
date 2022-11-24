@@ -1,0 +1,32 @@
+name: actions_on_protected_branch
+on: 
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    branches:    
+      - 'main'
+      - 'cloud-master'
+      - 'master'
+      - 'master-dob-fix'
+      - 'master-nin-hash-implementation'
+      - 'master-postgres-fix'
+      - 'master-postgres-latest'
+      - 'prepare-main'
+      - 'master-patch'
+      - 'master-prep'
+
+jobs:
+  job1:
+    name: check_admin
+    runs-on: ubuntu-latest
+    env:
+      NAME_ADMIN1: sfxoawodire
+      NAME_ADMIN2: sfxsoli
+
+    steps:
+      - if: ${{ env.NAME_ADMIN1 != 'sfxoawodire' || env.NAME.ADMIN2 != 'sfxsoli' }}
+        run: exit
+      - if: ${{ env.NAME_ADMIN1 == 'sfxoawodire' || env.NAME.ADMIN2 == 'sfxsoli' }}
+        run: echo "ok"
